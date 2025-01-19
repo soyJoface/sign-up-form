@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+main {
+    display: flex;
+}
+
+.background {
+    background-image: url("photo-1512757776214-26d36777b513.avif");
+    width: 100%; /* Ocupa todo el ancho */
+    max-width: 1000px;
+    min-width: 400px;
+    min-height: 100vh; /* Siempre ocupa la altura completa de la pantalla */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ajustes para el texto */
+.background h1 {
+    font-size: clamp( 4rem, 5vw, 6rem); /* Tamaño dinámico del texto */
+    color: black;
+    background-color: rgba(0, 0, 0, 0.1); /* Fondo semi-transparente */
+    padding: 1rem 0; /* Espaciado interno vertical */
+    width: 100%; /* El fondo ocupará todo el ancho del contenedor */
+    text-align: center; /* Centra el texto */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    display: block; /* Asegura que el h1 sea un bloque para aplicar el ancho */
+}
+
+.information {
+    padding: 5rem;
+    max-width: 1000px;
+    min-width: 600px;
+}
+
+
+.subtitle h2,
+.subtitle h3,
+.information h4 {
+    font-size: 2rem;
+    width: 90%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 20px;
+}
+
+.information h4 {
+    margin-top: 80px;
+}
+
+.form {
+    display: grid; /* Cambiamos a grid para mejor alineación */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
+    gap: 20px; /* Espaciado entre campos */
+    margin-top: 20px;
+}
+
+.form div {
+    display: flex;
+    flex-direction: column; /* Apila el label y el input */
+    gap: 5px; /* Espacio entre label e input */
+}
+
+label {
+    font-size: 1.1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #333; /* Color oscuro pero suave */
+}
+
+input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc; /* Borde gris suave */
+    border-radius: 5px; /* Bordes redondeados */
+    outline: none;
+    transition: border-color 0.3s; /* Suaviza la animación del foco */
+}
+
+input:focus {
+    border-color: #ffa500; /* Resalta con naranja al hacer foco */
+    box-shadow: 0 0 5px rgba(255, 165, 0, 0.5); /* Efecto de sombra */
+}
+
+button[type="submit"] {
+    display: block;
+    margin: 40px 0 0 0; /* Centrado horizontal */
+    padding: 10px 20px;
+    background-color: #ffa500; /* Naranja vibrante */
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Suaviza la animación de hover */
+}
+
+button[type="submit"]:hover {
+    background-color: #ff8c00; /* Oscurece el botón al pasar el mouse */
+}
+
+p {
+
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #555;
+}
+
+p a {
+    color: #ffa500;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
